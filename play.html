@@ -49,13 +49,14 @@
         </div>
 
         <div class="col d-flex justify-content-center">
-          <div class="mx-1 text-white">reverse</div>
-          <div class="text-white">shuffle</div>
+          <div id="previous" class="mx-1 text-white">previous</div>
+          
           <div>
-            <button class="rounded-circle text-warning">Play icon</button>
+            <button id="play" class="rounded-circle text-warning">Play icon</button>
           </div>
-          <div class="text-white">forward</div>
-          <div class="float-right mx-1 text-white">repeat</div>
+          <div id="pause" class="text-white"> <button class="btn-default text-warning">Pause </button></div>
+          <div id="next" class="float-right mx-1 text-white">next</div>
+          <div id="shuffle" class="text-white">shuffle</div>
         </div>
 
         <div class="">
@@ -63,20 +64,20 @@
         </div>
         
 
-    <div class="justify-content-center d-flex">
+    <div id="playlist-songs" class="justify-content-center d-flex">
       <img
         style="width: 50px; height: 50px"
         src="C:\Users\HP\Desktop\SOFTWARE ENGINEERING\AfroMOOD MUSIC APP\assets\kaypluz.jpg"
       />
-      <div class="col">
+      <div  class="col">
         <p class="text-white">Rosa</p>
         <p class="text-white">Kaypluz  <span class="float-right">symbol</span></p>
       </div>
 
-      
 
     </div>
       </div>
     </div>
+    <script src="Scripts\play.js"></script>
   </body>
 </html>
