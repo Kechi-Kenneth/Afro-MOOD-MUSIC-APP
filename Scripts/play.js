@@ -99,6 +99,7 @@ const playSong = (id) => {
   userData.currentSong = song;
   playButton.classList.add("playing");
   highlightCurrentSong();
+  setPlayerDisplay();
   audio.play();
 };
 
@@ -132,6 +133,18 @@ const playPreviousSong = () => {
   }
 };
 
+
+const setPlayerDisplay = () => {
+  const playingSong = document.getElementById("player-song-title");
+  const songArtist = document.getElementById("player-song-artist");
+  const currentTitle = userData?.currentSong?.title;
+  const currentArtist = userData?.currentSong?.artist;
+
+  playingSong.textContent = currentTitle ? currentTitle : "";
+  songArtist.textContent = currentArtist ? currentArtist : "";
+};
+
+
 const highlightCurrentSong = () => {
   const playlistSongElements = document.querySelectorAll(".playlist-song");
   const songToHighlight = document.getElementById(
@@ -143,14 +156,14 @@ const highlightCurrentSong = () => {
   });
 
   if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
-};
+}; 
 
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song) => {
       return `
       <li id="song-${song.id}" class="playlist-song">
-      <button class="playlist-song-info">
+      <button class="playlist-song-info ">
           <span class="playlist-song-title">${song.title}</span>
           <span class="playlist-song-artist">${song.artist}</span>
           <span class="playlist-song-duration">${song.duration}</span>
