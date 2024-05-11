@@ -18,9 +18,41 @@
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
 />
   <title>Songs</title>
+
+  <style>
+    /* Style for the playlist song buttons */
+    .playlist-song-info {
+      background-color: #4CAF50; /* Green background */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Style for the delete button */
+    .playlist-song-delete {
+      background-color: #f44336; /* Red background */
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container bg-secondary">
+  <div class="container bg-dark">
     <h4 class="float-left text-warning">Library</h4>
     <h4 class="float-right text-warning"> symbol</h4>
     <div class="row container-xl">
@@ -38,15 +70,25 @@
      
     </div>
 
-    <div class="row m-2">
-      <div id="first-col" class="bg-info border border-bottom-2 border-dark border-top-0" style="height: 70px; padding: 0px;"><img> <p class="text-white">Rosa <br> Kaypluz</p>  <p class="float-right"></p></div>
-      <div id="first-col" class="bg-primary"><img> <p class="text-white">Kaypluz</p> <p>Rosa</p> <p class="float-right mt-0">symbol</p></div>
-      <div id="first-col" class="bg-danger"><img> <p class="text-white">Kaypluz</p> <p>Rosa</p> <p class="float-right mt-0">symbol</p></div>
-      <div id="first-col" class="bg-success"><img> <p class="text-white">Kaypluz</p> <p>Rosa</p> <p class="float-right mt-0">symbol</p></div>
-      <div id="first-col" class="bg-info"><img> <p class="text-white">Kaypluz</p> <p>Rosa</p> <p class="float-right mt-0">symbol</p></div>
+    <div class=" d-flex ">
+      <ul id="playlist-songs" class="playlist-song list-group ">
+      <img
+        style="width: 50px; height: 50px"
+        src="C:\Users\HP\Desktop\SOFTWARE ENGINEERING\AfroMOOD MUSIC APP\assets\kaypluz.jpg"
+      />
+      <div  class="col">
+        <p class="text-white">Rosa</p>
+        <p class="text-white">Kaypluz </p>
+      </div>
+        
+      
+      </ul>
+
     </div>
 
     </div>
   </div>
+  
+  <script src="C:\Users\HP\Desktop\SOFTWARE ENGINEERING\AfroMOOD MUSIC APP\Scripts\play.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 
 const library = document.getElementById("Library");
+const songsButton = document.getElementById();
 
 
 

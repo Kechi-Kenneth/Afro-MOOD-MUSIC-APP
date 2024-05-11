@@ -21,6 +21,8 @@
     />
 
     <style>
+
+      
     
       * {
         box-sizing: border-box;
@@ -56,7 +58,7 @@
 
       .page {
         display: none;
-        background-color: #ffeecc;
+      
         padding-left: 20px;
        
         margin: 0px;
@@ -94,31 +96,32 @@
             <div
               class="col-sm-3 border border-bottom-2 border-dark border-top-0 m-3"
             >
-              <p>Playlist <span class="glyphicon glyphicon-user"></span></p>
+            <button class="bg-dark text-white">Playlists</button>
             </div>
     
             <div
               class="col-sm-3 border border-bottom-2 border-dark border-top-0 m-3"
             >
-              <p>Artists</p>
+            <button class="bg-dark text-white">Artists</button>
             </div>
     
             <div
               class="col-sm-3 border border-bottom-2 border-dark border-top-0 m-3"
             >
-              <p>Albums</p>
+            <button class="bg-dark text-white">Albums</button>
             </div>
     
             <div
               class="col-sm-3 border border-bottom-2 border-dark border-top-0 border-right-0 m-3"
             >
-              <p>Songs</p>
+            <a href="C:\Users\HP\Desktop\SOFTWARE ENGINEERING\AfroMOOD MUSIC APP\songs.html" target="_parent"><button class="bg-dark text-white">Songs</button></a>
+              
             </div>
     
             <div
               class="col-sm-3 border border-bottom-2 border-dark border-top-0 m-3 my-2"
             >
-              <p>Downloaded</p>
+            <button class="bg-dark text-white">Downloaded </button>
             </div>
           </div>
     
@@ -198,18 +201,23 @@
         </div>
 
       </div>
-      <div id="page3" class="page">
-        <h1>Page 3</h1>
-        <p>Okay... This is the third page...</p>
+      <div id="page3" class="page bg-dark ">
+       <h2 class="text-warning">favorite songs</h2>
+       <div  class="row" >
+        <ul id="favorite-songs" class="">
+         
+        </ul>
+
+       </div>
       </div>
-      <div id="page4" class="page">
-        <h1>Page 4</h1>
-        <p>Uhh... Fourth page?</p>
+      <div id="page4" class="page bg-dark row">
+        <h3 class="text-warning">New Music Daily</h3>
+       
+        <ul id="nmd" class="">
+
+        </ul>
       </div>
-      <div id="page5" class="page">
-        <h1>Page 5</h1>
-        <p>Still here? Fine, fifth page...</p>
-      </div>
+   
       <div id="page1" class="page default">
         <div
           id="home-display"
